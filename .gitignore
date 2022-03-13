@@ -1,2 +1,10 @@
 .idea
 node_modules
+src/favicon.ico
+
+
+.gitignore
+.DS_Store
+
+dist
+

@@ -19,16 +19,17 @@ module.exports = {
             "double",
             { allowTemplateLiterals: true, avoidEscape: true }
         ],
-        "multiline-ternary": ["error", "never"],
+        "multiline-ternary": ["error", "always-multiline"],
         "comma-dangle": ["error", "only-multiline"],
         "no-new": "error",
         "no-whitespace-before-property": "error",
         "quote-props": ["error", "as-needed"],
-        "object-curly-spacing": [
+        "object-curly-spacing": ["error", "always", { objectsInObjects: true }],
+        "require-jsdoc": "off",
+        "operator-linebreak": [
             "error",
-            "always",
-            { objectsInObjects: false }
-        ],
-        "require-jsdoc": "off"
+            "after",
+            { overrides: { "?": "before", ":": "before" } }
+        ]
     }
 };
